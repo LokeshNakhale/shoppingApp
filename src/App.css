@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+    opacity: 1;
+    visibility: visible;
+    animation: fadeOut 2s ease forwards;
+    animation-delay: 1.6s;
+
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+.slide {
+  font-size: 45px;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideIn 0.5s ease-in-out forwards;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.slide:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideIn {
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+    color: wheat;
+    
+  }
+ 
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px  20px;
+  /* background-color: #d9cdb9; */
+  background-color: rgb(59, 58, 58);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+}
+#navinfo{
+  display: flex;
+  gap: 12px;
+}
+#navinfo a{
+  font-size: 20px;
+  text-decoration: none;
+  padding: 4px 8px;
+  
+    color: wheat;
+ 
+}
+#logoutbtn{
+  padding: 2px 8px;
+  border: none;
+  background-color: black;
+  color: wheat;
+}
+#navinfo a:nth-child(4) {
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  animation: glowText 3s infinite ease-in-out;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  font-family: monospace;
+}
+
+@keyframes glowText {
+  0% {
+    color: #ffffff;
+    text-shadow: 0 0 6px green;
+  }
+  50% {
+    color: #ffe766;
+    text-shadow: 0 0 10px blue;
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 6px green;
+  }
+}
+
+@media (max-width:480px) {
+  #navinfo{
+
+  gap: 8px;
+}
+  #navinfo a{
+  font-size: 15px;
+  text-decoration: none;
+  padding: 3px 6px;
+  color: black;
+
+}
+nav{
+  padding: 8px 16px;
+}
+
+}
+/* ___________________________________________________Mens section_____________________________________________________ */
+#men{
+  width: 100%;
+  height: 80vh;
+  /* background-color: blue; */
+  padding: 25px;
+  
+}
+#menContener{
+  width: 100%;
+  height: 100%;
+
+ background-color: gray;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 12px;
+ 
+  
+}
+.men-footer{
+  width: 100%;
+  height: 25vh;
+  background:linear-gradient(gray, black) ;
+}
+#menCard {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+#menCard:hover {
+  transform: scale(1.03);
+}
+
+#image {
+  width: 100%;
+  height: 120px;
+  /* background-color: #eee; */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#menCard h1 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+ 
+}
+
+#menCard p {
+  font-size: 14px;
+  color:rgb(112, 112, 112);
+  margin: 4px 0;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.card-btn button {
+  flex: 1;
+  padding: 5px;
+  background-color: rgb(4, 172, 4);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+  opacity: .8;
+
+   &:hover{
+    color: black;
+    box-shadow: 0px 0px 4px 2px rgb(137, 143, 139);
+  }
+}
+.card-btn button a{
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+/*________________________________________________________- Men Details css_____________________________________________________ */
+
+#menDet {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.Mleft, .MRight {
+  flex: 1;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Mbuttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.Mbuttons button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Mbuttons button:hover {
+  background: #45a049;
+}
+
+.MRight h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.MRight h4 {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.MRight p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+#close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #FF5C31;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#close:hover {
+  background: #e60000;
+}
