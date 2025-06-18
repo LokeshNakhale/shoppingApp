@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-
+import img1 from '../assets/woImg1.webp'
 
 const Product = () => {
   return (
@@ -30,7 +30,7 @@ const Product = () => {
         <div className='block' id="women">
              <div className="card-contener">
                 <div className="card">
-                  <img src="/WoImg/woImg1.webp" alt="" />
+                  <img src={img1} alt="" />
                 </div>
                 <div className="card">
                   <img src="/WoImg/WoImg2.webp" alt="" />
