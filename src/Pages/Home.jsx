@@ -1,22 +1,19 @@
-import { useState } from "react";
-import "./Pages.css";
 
+import "./Pages.css";
+import h2img from "../assets/Movepng/home2-1.jpg"
+import h2img2 from "../assets/Movepng/home2-1img.jpg"
+
+import Menpng from '../assets/Movepng/home3png.png'
+import Tshirt from "../assets/Movepng/T-shirt.avif"
+import shirt from "../assets/Movepng/Shirt.jpg"
+import pants from "../assets/Movepng/pants.jpeg"
+
+
+import vid from '../assets/videos/Video.mp4'
+import { Link } from "react-router-dom";
 const Home = () => {
 
-  const [iamges, setIamges] = useState([
-    {img:'/Movepng/movImg1.png'},
-    {img:'/Movepng/movImg2.png'},
-    {img:'/Movepng/movImg3.png'},
-    {img:'/Movepng/movImg4.png'},
-    {img:'/Movepng/movImg5.png'},
-    {img:'/Movepng/movImg6.png'},
-    {img:'/Movepng/movImg1.png'},
-    {img:'/Movepng/movImg2.png'},
-    {img:'/Movepng/movImg3.png'},
-    {img:'/Movepng/movImg4.png'},
-    {img:'/Movepng/movImg5.png'},
-    {img:'/Movepng/movImg6.png'},
-  ])
+
   return (
     <>
      <div id="loader">
@@ -27,12 +24,12 @@ const Home = () => {
       <div id="home1">
         <div id="video">
           <video autoPlay muted loop>
-            <source src="/videos/Video.mp4" />
+            <source src={vid} />
           </video>
         </div>
       </div>
       <div id="home2">
-        <h2>Welcome to Zisbuy Fasion</h2>
+        <h2>Welcome to Zisbuy Fashion</h2>
         <div className="h2-cont">
           <div className="h2-info">
             <p>
@@ -57,40 +54,88 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div id="move">
-          <div className="moving">
-         {iamges.map((items)=>(
-           <>
-           <h1>BRANDS </h1>
-          <img src={items.img} alt="" />
-          </>
-          ))}
-          </div>
-         
-        </div>
+       
       </div>
-
+        
       <div id="home3">
       <div id="home3-cont">
           <div className="h3-img">
-            <img src="/Movepng/home3png.png" alt="" />
+            <img src={Menpng} alt="" />
             
           </div>
         <div className="h3-cont">
           <img id="phoneImg" src="/Movepng/home3png.png" alt="" />
-          <h1>PADAY</h1>
+          <h1>PAYDAY</h1>
           <h1>Sale Now</h1>
           <p>Spend minimal $100 get 30% off
             voucher code for your next purchase</p>
           <p> <b>1 June - 10 June 2025</b> </p>
         <p>*Terms & Conditions apply</p>
-          <button>Shop now</button>
+          <Link to='/Product' >Shop Now</Link>
+        </div>
+        {/* phone */}
+        <div className="h3-cont-phone"> 
+       <img src={Menpng} id="phoneImg" alt="" />
+          <h1>PAYDAY</h1>
+          <h1>Sale Now</h1>
+          <p>Spend minimal $100 get 30% off
+            voucher code for your next purchase</p>
+          <p> <b>1 June - 10 June 2025</b> </p>
+        <p>*Terms & Conditions apply</p>
+           <Link to='/Product' >Shop Now</Link>
         </div>
       </div>
       </div>
+
+      <div id="home2-1">
+            <div className="h2-1cont">
+              <div id="h2-1cart" className="h2-1cart">
+                      <button>About Us</button> 
+                      <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, amet? </h2>
+                      <p>lss Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt quis enim corrupti veniam aperiam. Quam debitis ipsam officiis nesciunt ipsum ex provident corrupti harum fugit itaque illum explicabo repellendus, reiciendis omnis incidunt! ss</p>
+              </div>
+              <div className="h2-1cart">
+                <img src={h2img} alt="" />
+                
+              </div>
+              <div className="h2-1cart">
+                <img src={h2img2} alt="" />
+                
+              </div>
+            </div>
+          </div>
+
+    <div id="home4">
+      <div className="elem">
+        <img src={shirt} alt="" />
+        <div className="text-div">
+          <h1>Shirts </h1>
+          <h1>Shirts </h1>
+        </div>
+        <img src={shirt} alt="" />
+      </div>  
+      <div className="elem">
+        <img src={Tshirt} alt="" />
+        <div className="text-div">
+         <h1>T-shirts </h1>
+          <h1>T-Shirts </h1>
+        </div>
+        <img src={Tshirt} alt="" />
+      </div>  
+      <div className="elem">
+        <img src={pants} alt="" />
+        <div className="text-div">
+           <h1>Pants </h1>
+          <h1>Pants </h1>
+          
+        </div>
+        <img src={pants} alt="" />
+      </div>  
+      </div>      
+
       <footer class="main-footer">
   <div class="footer-content">
-    <p>&copy; 2025 PADYA. All rights reserved.</p>
+    <p>&copy; 2025 PAYDAY. All rights reserved.</p>
     <div class="footer-links">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>

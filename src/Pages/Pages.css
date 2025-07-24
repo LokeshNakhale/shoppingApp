@@ -1,10 +1,10 @@
 #home1 {
   width: 100%;
   height: 95vh;
-  
+
   position: relative;
 }
-body{
+body {
   background-color: black;
 }
 #video {
@@ -16,23 +16,21 @@ body{
   height: 100%;
   object-fit: cover;
 }
-/* home 2______________________________ */
+/* __________________________________________________home 2______________________________ */
 #home2 {
-
   /* background-color: rgb(59, 58, 58); */
   padding: 40px;
   width: 100%;
   height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #222;
-  
 }
 
 #home2 h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  
+
   color: wheat;
 }
 
@@ -72,7 +70,7 @@ body{
   gap: 20px;
   animation: scrollLeft 30s linear infinite;
 }
-#move .moving h1{
+#move .moving h1 {
   color: wheat;
 }
 @keyframes scrollLeft {
@@ -90,16 +88,15 @@ body{
 }
 
 @media (max-width: 480px) {
-  #home1{
+  #home1 {
     height: 43vh;
   }
   #home2 {
-   
-      background-color: #222;
+    background-color: #222;
 
     padding: 40px;
     width: 100%;
-   height: 69vh;
+    height: 49vh;
     /* background-color: rgb(255, 155, 155); */
     font-family: Arial, sans-serif;
   }
@@ -111,23 +108,145 @@ body{
   .h2-info {
     width: 98%;
     font-size: 1rem;
-    
+
     font-size: 10px;
     text-align: center;
   }
   #move .moving img {
     width: 60px;
   }
-  
+
   .moving h1 {
-    color: #F19A31;
+    color: #f19a31;
     font-size: 20px;
   }
   #move .moving {
     animation: scrollLeft 10s linear infinite;
   }
 }
-/* home3____________________________________________________ */
+
+/* ______________________________________________________________#home2-1 */
+#home2-1{
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  
+}
+.h2-1cont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.h2-1cont .h2-1cart{
+  width: 400px;
+  height: 450px;
+  
+
+}
+.h2-1cart img{
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+}
+#h2-1cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  color: wheat;
+}
+
+#h2-1cart h2{
+  width: 75%;
+  font-size: 30px;
+}
+#h2-1cart p{
+  width: 75%;
+   color: rgba(245, 222, 179, 0.684);
+}
+#h2-1cart button{
+  padding: 6px 12px;
+  border: 1px solid wheat;
+  border-radius: 18px;
+  background-color: transparent;
+  color: wheat;
+  font-size: 20px;
+}
+
+
+@media (max-width:480px) {
+  #home2-1{
+    height: 61vh;
+  }
+  .h2-1cont{
+  gap: 2px;
+flex-wrap: wrap;
+}
+  
+  .h2-1cont .h2-1cart:nth-child(3){
+ display: none;
+  
+
+}
+.h2-1cont .h2-1cart:nth-child(2){
+  border-radius: 50%;
+  overflow: hidden;
+  height: 220px;
+  
+  
+}
+   
+  .h2-1cont .h2-1cart{
+  width: 200px;
+  height: 250px;
+  
+  
+
+}
+.h2-1cart img{
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+
+}
+
+#h2-1cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: wheat;
+
+  width: 100%;
+  text-align: center;
+}
+
+#h2-1cart h2{
+  width: 88%;
+  font-size: 15px;
+}
+#h2-1cart p{
+  width: 65%;
+   color: rgba(245, 222, 179, 0.684);
+   font-size: 10px;
+}
+#h2-1cart button{
+  padding: 6px 12px;
+  border: 1px solid wheat;
+  border-radius: 18px;
+  background-color: transparent;
+  color: wheat;
+  font-size: 10px;
+}
+}
+
+/*_________________________________________ home3____________________________________________________ */
 
 #home3 {
   background-color: rgb(132, 122, 122);
@@ -135,42 +254,43 @@ body{
   width: 100%;
   height: 100vh;
   font-family: Arial, sans-serif;
-  
+  border-bottom: 2px solid wheat;
+  border-top: 2px solid wheat;
 }
 #home3-cont {
   width: 100%;
   height: 100%;
   display: flex;
- 
 }
 #home3-cont .h3-img {
   width: 600px;
   background-color: wheat;
-  background: linear-gradient(to  right, wheat 30%, #222 70%);
-  padding-top: 20px;
- 
-
- 
+  background: linear-gradient(to right, wheat 30%, #222 70%);
+  
 }
 .h3-img img {
-  width: 600px;
+  width: 500px;
   object-fit: cover;
- filter: drop-shadow(0  40px 50px rgba(0, 0, 0, 0.914));
+  height: 100%;
+  filter: drop-shadow(0 40px 50px rgba(0, 0, 0, 0.914));
  
-
+  
 }
 .h3-cont {
- 
   background-color: #222;
   height: 100%;
   width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   align-items: flex-start;
 }
-.h3-cont #phoneImg{
+.h3-cont-phone {
+  display: none;
+}
+.h3-cont #phoneImg {
   display: none;
 }
 .h3-cont h1 {
@@ -188,20 +308,25 @@ body{
   font-size: 20px;
   color: wheat;
 }
-.h3-cont button {
+.h3-cont a {
   padding: 15px 18px;
   font-size: 20px;
   font-weight: 800;
   background-color: black;
-
+  text-decoration: none;
   color: wheat;
   border: none;
   width: fit-content;
+  transition: all ease 0.7s;
+  &:hover{
+    background-color: wheat;
+    color: black;
+  }
 }
 @media screen and (max-width: 480px) {
-#home3{
-  height: 64vh;
-}
+  #home3 {
+    height: 60vh;
+  }
   #home3-cont {
     flex-direction: column;
   }
@@ -213,7 +338,6 @@ body{
   }
   .h3-img img {
     height: auto;
-    
   }
 
   .h3-cont {
@@ -222,27 +346,67 @@ body{
     box-sizing: border-box;
     align-items: center;
     display: flex;
-    
+
     gap: 15px;
     position: relative;
-  }
-  .h3-cont #phoneImg{
-    display: block;
-    width: 250px;
-    position: absolute;
     display: none;
-
   }
 
-  .h3-cont h1 {
-    font-size: 32px;
-    
-  }
-  .h3-cont h1:nth-child(2) {
-    font-size: 32px;
-    z-index: 4;
+  .h3-cont-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #111, #333);
+    color: wheat;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
   }
 
+  .h3-cont-phone h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  .h3-cont-phone p {
+    font-size: 0.95rem;
+    margin: 6px 0;
+    z-index: 2;
+  }
+
+  .h3-cont-phone a {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: wheat;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    transition: all 0.3s;
+  }
+
+  .h3-cont-phone button:hover {
+    transform: scale(1.05);
+  }
+
+  #phoneImg {
+    position: absolute;
+    bottom: 0;
+    width: 280px;
+    transform: perspective(800px) rotateY(15deg) rotateX(5deg);
+    filter: drop-shadow(8px 8px 25px rgba(0, 0, 0, 0.8));
+    opacity: 0.95;
+    z-index: 1;
+  }
 
   .h3-cont h1:nth-child(1) {
     transform: rotate(0deg);
@@ -255,7 +419,8 @@ body{
     font-size: 22px;
     z-index: 4;
     color: wheat;
-     -webkit-text-stroke: 0.5px rgb(15, 15, 15); /* Stroke width and color */
+    text-align: center;
+    -webkit-text-stroke: 0.5px rgb(15, 15, 15);
   }
 
   .h3-cont button {
@@ -263,18 +428,119 @@ body{
     padding: 12px 16px;
   }
 }
+
+/* _____________________Home4__________________ */
+
+#home4{
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 100px;
+   background: linear-gradient(to bottom, #222, black);
+}
+.elem{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.text-div{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  height: 140px;
+  overflow: hidden;
+  
+}
+.elem h1{
+  font-size: 7vw;
+  transition: all ease 0.5s;
+  color: rgb(81, 80, 80);
+  
+}
+.elem img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%) rotate(2deg) ;
+
+}
+.elem img:nth-child(1){
+  left: 10%;
+  bottom: 0;
+}
+.elem img:nth-child(3){
+  transform: translateY(10%) rotate(-2deg) ;
+right: 10%;
+  
+}
+.elem:hover h1{
+  transform: translateY(-100%);
+  color: wheat;
+}
+.elem:hover img{
+  opacity: 1;
+   transform: translateY(0%) rotate(0deg) ;
+}
+
+@media (max-width:480px) {
+  #home4{
+  width: 100%;
+  min-height: 40vh;
+  padding: 50px 2px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+.elem h1{
+  font-size: 7.8vw;
+  transition: all ease 0.5s;
+  color: rgb(81, 80, 80);
+  
+}
+  .elem img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .elem{
+
+  
+  width: 100%;
+  
+}
+.text-div{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+height: 40px;
+}
+.elem img:nth-child(1){
+  left: 2%;
+  bottom: 0;
+}
+.elem img:nth-child(3){
+  transform: translateY(10%) rotate(-2deg) ;
+right: 2%;
+  
+}
+}
 /*________________________________________________________Home  Footer ___________________ */
 
 .main-footer {
-  background-color: black; 
-  color: #fff; 
+  background-color: black;
+  color: #fff;
   padding: 40px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-
 }
 
 .footer-content {
@@ -306,7 +572,6 @@ body{
   color: #fff;
 }
 
-
 /*______________________________________________product____________________ */
 #product {
   width: 100%;
@@ -316,10 +581,9 @@ body{
   background-color: #222;
   color: wheat;
 }
-#product h1{
+#product h1 {
   text-align: center;
   font-family: monospace;
-
 }
 
 .block .button {
@@ -356,7 +620,7 @@ body{
   transition: all 0.2s ease-in;
   text-decoration: none;
   color: rgb(249, 247, 247);
-  
+
   &:hover {
     color: wheat;
     box-shadow: 0 0 12px 4px wheat;
@@ -368,8 +632,8 @@ body{
   border: none;
   /* display: none; */
   background-color: rgba(255, 0, 0, 0);
-  &:hover{
-    background-color: rgba(255, 0, 0, 0); 
+  &:hover {
+    background-color: rgba(255, 0, 0, 0);
   }
 }
 
@@ -396,7 +660,7 @@ body{
   height: 100%;
   object-fit: cover;
 }
-#women{
+#women {
   padding: 20px;
 }
 
@@ -419,15 +683,14 @@ body{
   margin: 40px auto;
   padding: 20px;
   background: #fff;
+  
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
- 
 }
 .cart-container h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
- 
 }
 .empty-msg {
   text-align: center;
@@ -437,7 +700,7 @@ body{
 .cart-item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #060606;
   padding: 15px 0;
 }
 .cart-item img {
@@ -485,4 +748,12 @@ body{
 }
 .cart-summary h2 {
   font-size: 1.5rem;
+}
+.cartBtn{
+  padding: 6px 12px;
+  border: none;
+  background-color: green;
+  border-radius:4px ;
+  color: wheat;
+
 }

@@ -44,7 +44,7 @@ getDetails.map((curValue)=>{
     <div>
       <div>
         
-        <form onSubmit={handleSubmit} action="">
+        <form onSubmit={handleSubmit}>
          <div>
            <p>LogIn</p>
          </div>

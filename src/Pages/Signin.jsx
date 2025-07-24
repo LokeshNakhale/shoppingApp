@@ -27,8 +27,8 @@ const Signin = () => {
    }else{
         const getData= JSON.parse(localStorage.getItem('user')||'[]')
       let arr = []
-        arr= [...getData]
-        arr.push(data)
+        arr= [...getData, data]
+        // arr.push(data)
 
    localStorage.setItem('user',JSON.stringify(arr));
    alert('Sign up sucessfully')
@@ -39,7 +39,7 @@ const Signin = () => {
   return (
     <div>
       <div>
-        <form onSubmit={handleSubmit} action="">
+        <form onSubmit={handleSubmit}>
          <div>
            <p>Sign Up</p>
          </div>

@@ -1,6 +1,15 @@
 
 import { Link } from 'react-router-dom'
-import img1 from '../assets/woImg1.webp'
+import imgM1 from '../assets/Mimages/menC1.jpg'
+import imgM2 from '../assets/Mimages/menC2.avif'
+import imgM3 from '../assets/Mimages/menC3.avif'
+import imgM4 from '../assets/Mimages/menC4.avif'
+
+import imgW1 from '../assets/WoImg/woImg1.webp'
+import imgW2 from '../assets/WoImg/woImg2.webp'
+import imgW3 from '../assets/WoImg/woImg3.webp'
+import imgW4 from '../assets/WoImg/woImg4.webp'
+
 
 const Product = () => {
   return (
@@ -10,16 +19,16 @@ const Product = () => {
         <div className='block' id="men">
             <div className="card-contener">
                 <div className="card">
-                    <img src='/Mimages/menC1.jpg' alt="" />
+                  <img src={imgM1} alt="" />
                 </div>
                 <div className="card">
-                  <img src='/Mimages/menC2.avif' alt="" />
+                  <img src={imgM2} alt="" />
                 </div>
                 <div className="card">
-                  <img src='/Mimages/menC3.avif' alt="" />
+                  <img src={imgM3} alt="" />
                 </div>
                 <div className="card">
-                  <img src='/Mimages/menC4.avif' alt="" />
+                  <img src={imgM4} alt="" />
                 </div>
             </div>
            <div className="button">
@@ -30,16 +39,16 @@ const Product = () => {
         <div className='block' id="women">
              <div className="card-contener">
                 <div className="card">
-                  <img src={img1} alt="" />
+                  <img src={imgW1} alt="" />
                 </div>
                 <div className="card">
-                  <img src="/WoImg/WoImg2.webp" alt="" />
+                  <img src={imgW2} alt=""/>
                 </div>
                 <div className="card">
-                  <img src="/WoImg/WoImg3.webp" alt="" />
+                  <img src={imgW3} alt="" />
                 </div>
                 <div className="card">
-                  <img src="/WoImg/WoImg4.webp" alt="" />
+                  <img src={imgW4} alt="" />
                 </div>
             </div>
            <div className="button">

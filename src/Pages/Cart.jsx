@@ -8,7 +8,7 @@ function Cart({cart,handleInc,handleDec, handleRemove}) {
       <h1>Your Cart</h1>
       <h3>{cart.length} items</h3>
    
-        <p className="empty-msg">Cart is empty</p>
+        <p className="empty-msg">Carts</p>
     
       {cart.map((cartItem )=>(
         
@@ -18,12 +18,12 @@ function Cart({cart,handleInc,handleDec, handleRemove}) {
               <h2>{cartItem.title}</h2>
               <p> {cartItem.price}Rs. </p>
               <div className="qty-controls">
-                <button onClick={()=>handleDec(cartItem.id)} >-</button>
+                <button onClick={()=>handleDec(cartItem.id)}>-</button>
                 <span> {cartItem.quantity} </span>
-                <button onClick={()=>handleInc(cartItem.id)} >+</button>
+                <button onClick={()=>handleInc(cartItem.id)}>+</button>
               </div>
               <p className="item-total">Total:{Math.floor(cartItem.price*cartItem.quantity)}</p>
-              <button onClick={()=>handleRemove(cartItem.id)} >remove</button>
+              <button style={{background:'red'}} className="cartBtn" onClick={()=>handleRemove(cartItem.id)} >remove</button> <button className="cartBtn" > Buy Now </button>
             </div>
           </div>
       ))}

@@ -11,7 +11,9 @@ import Cart from './Pages/Cart'
 import { useEffect, useState } from 'react'
 import Login from './Pages/Login';
 
+import logo from './assets/Movepng/Logo.png'
 
+  // "homepage": "https://github.com/LokeshNakhale/shoppingApp"
 function App() {
  
 const [cart, setCart] = useState([])
@@ -74,13 +76,15 @@ const logout=()=>{
   return (
     <>
       <nav>
-        <div id="logo">logo</div>
+        <div id="logo">
+          <img src={logo} alt="" />
+        </div>
         <div id="navinfo">
           <Link to='/'>Home</Link>
           <Link to='/Product'>Product</Link>
           <Link to='/Card'><MdShoppingCart />{cart.length} </Link>
           
-          {log ? <button id='logoutbtn' onClick={logout} >Log Out</button>:<Link to='/Singin'>Sign in</Link>}
+          {log ? <button id='logoutbtn' onClick={logout} >Log Out</button>:<Link to='/Singin'>SignIn</Link>}
         </div>
       </nav>
     <Routes>
